@@ -11,7 +11,7 @@ vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-omnibus
 
 # ソース配置
-Windows上の~/git/以下ｓにチェックアウト（クローン）  
+Windows上に~/git/ディレクトリ作成。本ディレクトリにソース配置  
 ※VM上の/usr/local/gitと同期される。
 
 # コマンド
