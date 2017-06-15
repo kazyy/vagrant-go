@@ -22,7 +22,7 @@ vagrant up
 しばらくすると、VMが起動する。
 
 ## VMへssh接続
-IP: 192.168.99.100  
+IP: 192.168.0.2  
 ID: vagrant  
 秘密鍵: ~/.vagrant.d/insecure_private_key
 
