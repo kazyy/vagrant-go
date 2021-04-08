@@ -17,6 +17,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     conf.vm.hostname = "local"
     conf.vm.network "private_network", ip: "192.168.0.2"
 
+    conf.vm.network :forwarded_port, guest:22, host:22, id:"ssh"
+    conf.vm.network :forwarded_port, guest:80, host:80, id:"http"
+    conf.vm.network :forwarded_port, guest:443, host:443, id:"https"
+    conf.vm.network :forwarded_port, guest:3306, host:3306, id:"mysql"
+
     conf.vm.provision "chef_solo" do |chef|
       chef.add_recipe "cent7"
       chef.add_recipe "go"
